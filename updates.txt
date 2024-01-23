@@ -1,3 +1,48 @@
+# 2024-01-23 03:15
+- [feat (Starr): Add BEN THE MEN to LQ (Release Title) Custom Formats #1773](https://github.com/TRaSH-Guides/Guides/pull/1773)
+
+# 2024-01-14 21:15
+- [feat(guide): Collection of Custom Formats - HDR Formats - Improve description](https://github.com/TRaSH-Guides/Guides/pull/1760)
+- [feat(guide): Collection of Custom Formats - HQ Release Groups - Improve description](https://github.com/TRaSH-Guides/Guides/pull/1758)
+
+# 2024-01-11 20:30
+- [feat(guide): Hardlinks unRaid - Add The fastest way to create the needed subfolders](https://github.com/TRaSH-Guides/Guides/pull/1753)
+- [feat(guide): How to set up Quality Profiles - Add DV HDR10+ description](https://github.com/TRaSH-Guides/Guides/pull/1756)
+- [feat(guide): How to Sync 2 Radarr or Sonarr with each other - simplify wording](https://github.com/TRaSH-Guides/Guides/pull/1754)
+- [feat(radarr): Add RlsGrp MarkII to LQ](https://github.com/TRaSH-Guides/Guides/pull/1752)
+- [feat(starr): Add upscaled to Sonarr and add UPS](https://github.com/TRaSH-Guides/Guides/pull/1740)
+- [fix(guide): Synology - Update link to Pullio documentation](https://github.com/TRaSH-Guides/Guides/pull/1755)
+
+# 2024-01-10 22:15
+- [feat(Starr): Add NEW CF `DV HDR10+ Boost` + Change score for `DV HDR10+` from `1600` to `1500`](https://github.com/TRaSH-Guides/Guides/pull/1744)
+- [feat(Starr): Add RlsGrp `LCD` to CF `Bad Dual Groups`](https://github.com/TRaSH-Guides/Guides/pull/1742)
+- [feat(Starr): Added imdb id to Emby naming scheme](https://github.com/TRaSH-Guides/Guides/pull/1739)
+
+# 2024-01-03 20:25
+- [feat(radarr:) Remove LEGi0N from UHD Blu-ray Tier 03](https://github.com/TRaSH-Guides/Guides/pull/1720)
+
+# 2023-12-31 18:35
+- [feat(starr): Add CF for BBC iPlayer](https://github.com/TRaSH-Guides/Guides/pull/1714)
+- [feat(starr): Add rlsgrp vnlls to Bad Dual Groups](https://github.com/TRaSH-Guides/Guides/pull/1713)
+
+# 2023-12-30 20:30
+- [feat(guide): Sonarr move v4 from beta to main](https://github.com/TRaSH-Guides/Guides/pull/1712)
+- [feat(starr): add rlsgrp vnlls to Bad Dual Groups](https://github.com/TRaSH-Guides/Guides/pull/1713)
+- [fix(starr): Scene CF mismatching title](https://github.com/TRaSH-Guides/Guides/pull/1708)
+
+# 2023-12-26 21:15
+- [feat(radarr): Add RlsGrp `Will1869` to `LQ (Release Title)`](https://github.com/TRaSH-Guides/Guides/pull/1702)
+- [feat(starr): Add NEW CF INTERNAL](https://github.com/TRaSH-Guides/Guides/pull/1704)
+- [fix(guide): Add enable advanced settings to to Recommended naming scheme](https://github.com/TRaSH-Guides/Guides/pull/1705)
+- [fix(sonarr): Match `HIDI` as `HIDIVE`](https://github.com/TRaSH-Guides/Guides/pull/1697)
+- [fix(starr): Renamed CF DV (FEL) to DV (Disk)](https://github.com/TRaSH-Guides/Guides/pull/1706)
+
+# 2023-12-25 16:00
+- [feat(Sonarr): add `.heb` to `Retags`](https://github.com/TRaSH-Guides/Guides/pull/1703)
+
+# 2023-12-23 02:00
+- [Add DV HDR10Plus to Guides](https://github.com/TRaSH-Guides/Guides/pull/1693)
+
 # 2023-12-17 21:30
 - [fix(starr): Update Radarr retags Custom Format, Sonarr iT Custom Format, and Radarr Naming Scheme](https://github.com/TRaSH-Guides/Guides/pull/1690)
 
