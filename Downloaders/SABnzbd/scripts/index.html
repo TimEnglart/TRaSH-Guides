@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
     
     
       
@@ -3396,13 +3396,11 @@ Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc).
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">re</span>
 
+<span class="c1"># normalize argv to scriptname and just first 8 arguments to maintain compatibility</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">argv</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[:</span><span class="mi">9</span><span class="p">]</span>
 <span class="k">try</span><span class="p">:</span>
-    <span class="c1"># Parse the 18 input variables for SABnzbd version &gt;= 4.0.0</span>
-    <span class="p">(</span><span class="n">scriptname</span><span class="p">,</span> <span class="n">nzbname</span><span class="p">,</span> <span class="n">postprocflags</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">script</span><span class="p">,</span> <span class="n">prio</span><span class="p">,</span> <span class="n">downloadsize</span><span class="p">,</span> <span class="n">grouplist</span><span class="p">,</span> <span class="n">showname</span><span class="p">,</span> <span class="n">season</span><span class="p">,</span> <span class="n">episodenumber</span><span class="p">,</span> <span class="n">episodename</span><span class="p">,</span> <span class="n">is_proper</span><span class="p">,</span> <span class="n">resolution</span><span class="p">,</span> <span class="n">decade</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">job_type</span><span class="p">)</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span>
-    <span class="n">downloadsize</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">downloadsize</span><span class="p">)</span>
-<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-    <span class="c1"># ...or 11 variables for earlier versions</span>
-    <span class="p">(</span><span class="n">scriptname</span><span class="p">,</span> <span class="n">nzbname</span><span class="p">,</span> <span class="n">postprocflags</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">script</span><span class="p">,</span> <span class="n">prio</span><span class="p">,</span> <span class="n">downloadsize</span><span class="p">,</span> <span class="n">grouplist</span><span class="p">,</span> <span class="n">showname</span><span class="p">,</span> <span class="n">season</span><span class="p">,</span> <span class="n">episodenumber</span><span class="p">,</span> <span class="n">episodename</span><span class="p">)</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span>
+    <span class="c1"># Parse the input variables for SABnzbd version &gt;= 4.2.0</span>
+    <span class="p">(</span><span class="n">scriptname</span><span class="p">,</span> <span class="n">nzbname</span><span class="p">,</span> <span class="n">postprocflags</span><span class="p">,</span> <span class="n">category</span><span class="p">,</span> <span class="n">script</span><span class="p">,</span> <span class="n">prio</span><span class="p">,</span> <span class="n">downloadsize</span><span class="p">,</span> <span class="n">grouplist</span><span class="p">)</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span>
 <span class="k">except</span><span class="p">:</span>
     <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>    <span class="c1"># exit with 1 causes SABnzbd to ignore the output of this script</span>
 
@@ -3621,10 +3619,10 @@ Cleans the NZB name by removing the retagged stuff (-Obfuscated, -postbox, etc).
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view"], "search": "../../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.7389ff0e.min.js"></script>
       
     
   <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
