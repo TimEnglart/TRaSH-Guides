@@ -69,10 +69,10 @@ We've made 3 guides related to this.
 | General Streaming Services | Asian Streaming Services | Dutch Streaming Services |
 | -------------------------- | ------------------------ | ------------------------ |
 | [Amazon](#amzn)            | [FOD](#fod)              | [Pathe Thuis](#pathe)    |
-| [Apple TV+](#atvp)         | [TVer](#tver)            | [Videoland](#vdl)        |
-| [Bravia Core](#bcore)      | [U-NEXT](#u-next)        |                          |
-| [Criterion Channel](#crit) |                          |                          |
-| [Disney+](#dsnp)           |                          |                          |
+| [Apple TV+](#atvp)         | [Disney+ Hotstar](#htsr) | [Videoland](#vdl)        |
+| [Bravia Core](#bcore)      | [TVer](#tver)            |                          |
+| [Criterion Channel](#crit) | [U-NEXT](#u-next)        |                          |
+| [Disney+](#dsnp)           | [VIU](#viu)              |                          |
 | [HBO](#hbo)                |                          |                          |
 | [HBO Max](#hmax)           |                          |                          |
 | [Hulu](#hulu)              |                          |                          |
@@ -86,7 +86,7 @@ We've made 3 guides related to this.
 | UK Streaming Services | Misc Streaming Services | Anime Streaming Services |
 | --------------------- | ----------------------- | ------------------------ |
 | [BBC iPlayer](#ip)    | [Crave](#crav)          | [VRV](#vrv)              |
-|                       | [OViD](#ovid)           |                          |
+| [ITVX](#itvx)         | [OViD](#ovid)           |                          |
 
 ---
 
@@ -1774,7 +1774,9 @@ We've made 3 guides related to this.
 
 ---
 
-### AMZN
+### General Streaming Services
+
+#### AMZN
 
 <sub>Amazon Prime Video</sub>
 
@@ -1792,7 +1794,7 @@ We've made 3 guides related to this.
 
 ---
 
-### ATVP
+#### ATVP
 
 <sub>Apple TV+</sub>
 
@@ -1810,241 +1812,7 @@ We've made 3 guides related to this.
 
 ---
 
-### CRiT
-
-<sub>Criterion Channel</sub>
-
-??? question "Criterion Channel - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/crit.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crit.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### DSNP
-
-<sub>Disney+</sub>
-
-??? question "Disney+ - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/dsnp.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dsnp.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### HBO
-
-<sub>HBO</sub>
-
-??? question "HBO - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hbo.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hbo.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### HMAX
-
-<sub>HBO Max</sub>
-
-??? question "Max (streaming service) aka HBO Max - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hmax.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### Max
-
-<sub>Max (streaming service)</sub>
-
-??? question "Max (streaming service) - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/max.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### Hulu
-
-<sub>Hulu</sub>
-
-??? question "Hulu - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/hulu.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hulu.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### iP
-
-<sub>BBC iPlayer aka iP</sub>
-
-??? question "BBC iPlayer aka iP - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/ip.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ip.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### NF
-
-<sub>Netflix</sub>
-
-??? question "Netflix - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/nf.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/nf.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### PCOK
-
-<sub>Peacock TV</sub>
-
-??? question "Peacock TV - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/pcok.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pcok.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### PMTP
-
-<sub>Paramount+</sub>
-
-??? question "Paramount+ - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/pmtp.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pmtp.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### MA
-
-<sub>Movies Anywhere</sub>
-
-??? question "Movies Anywhere - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/ma.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ma.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### Pathe
-
-<sub>Pathé Thuis</sub>
-
-??? question "Pathé Thuis - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/pathe.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pathe.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### VDL
-
-<sub>Videoland</sub>
-
-??? question "Videoland - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/vdl.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vdl.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### BCORE
+#### BCORE
 
 <sub>Bravia Core</sub>
 
@@ -2062,7 +1830,187 @@ We've made 3 guides related to this.
 
 ---
 
-### STAN
+#### CRiT
+
+<sub>Criterion Channel</sub>
+
+??? question "Criterion Channel - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/crit.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crit.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### DSNP
+
+<sub>Disney+</sub>
+
+??? question "Disney+ - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/dsnp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/dsnp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### HBO
+
+<sub>HBO</sub>
+
+??? question "HBO - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hbo.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hbo.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### HMAX
+
+<sub>HBO Max</sub>
+
+??? question "Max (streaming service) aka HBO Max - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hmax.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### Hulu
+
+<sub>Hulu</sub>
+
+??? question "Hulu - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hulu.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/hulu.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### Max
+
+<sub>Max (streaming service)</sub>
+
+??? question "Max (streaming service) - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/hmax.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/max.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### MA
+
+<sub>Movies Anywhere</sub>
+
+??? question "Movies Anywhere - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/ma.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ma.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### NF
+
+<sub>Netflix</sub>
+
+??? question "Netflix - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/nf.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/nf.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### PCOK
+
+<sub>Peacock TV</sub>
+
+??? question "Peacock TV - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/pcok.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pcok.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### PMTP
+
+<sub>Paramount+</sub>
+
+??? question "Paramount+ - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/pmtp.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pmtp.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### STAN
 
 <sub>Stan</sub>
 
@@ -2080,43 +2028,11 @@ We've made 3 guides related to this.
 
 ---
 
-### Crav
-
-<sub>Crave</sub>
-
-??? question "CRAVE - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/crav.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crav.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
+### Asian Streaming Services
 
 ---
 
-### OViD
-
-<sub>OViD</sub>
-
-??? question "OViD - [Click to show/hide]"
-
-    {! include-markdown "../../includes/cf-descriptions/ovid.md" !}
-
-??? example "JSON - [Click to show/hide]"
-
-    ```json
-    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
-    ```
-
-<sub><sup>[TOP](#index)</sup>
-
----
-
-### FOD
+#### FOD
 
 <sub>FOD = Fuji Television On Demand</sub>
 
@@ -2134,7 +2050,25 @@ We've made 3 guides related to this.
 
 ---
 
-### TVer
+#### HTSR
+
+<sub>Disney+ Hotstar</sub>
+
+??? question "Disney+ Hotstar - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/htsr.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/htsr.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### TVer
 
 <sub>TVer</sub>
 
@@ -2152,7 +2086,7 @@ We've made 3 guides related to this.
 
 ---
 
-### U-NEXT
+#### U-NEXT
 
 <sub>U-NEXT</sub>
 
@@ -2170,7 +2104,149 @@ We've made 3 guides related to this.
 
 ---
 
-### VRV
+#### VIU
+
+<sub>VIU</sub>
+
+??? question "VIU - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/viu.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/viu.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### Dutch Streaming Services
+
+---
+
+#### Pathe
+
+<sub>Pathé Thuis</sub>
+
+??? question "Pathé Thuis - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/pathe.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/pathe.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### VDL
+
+<sub>Videoland</sub>
+
+??? question "Videoland - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/vdl.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/vdl.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### UK Streaming Services
+
+---
+
+#### iP
+
+<sub>BBC iPlayer aka iP</sub>
+
+??? question "BBC iPlayer aka iP - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/ip.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ip.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### ITVX
+
+<sub>ITVX aka ITV</sub>
+
+??? question "ITVX aka ITV - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/itvx.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/itvx.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### Misc Streaming Services
+
+---
+
+#### Crav
+
+<sub>Crave</sub>
+
+??? question "CRAVE - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/crav.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/crav.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+#### OViD
+
+<sub>OViD</sub>
+
+??? question "OViD - [Click to show/hide]"
+
+    {! include-markdown "../../includes/cf-descriptions/ovid.md" !}
+
+??? example "JSON - [Click to show/hide]"
+
+    ```json
+    [[% filter indent(width=4) %]][[% include 'json/radarr/cf/ovid.json' %]][[% endfilter %]]
+    ```
+
+<sub><sup>[TOP](#index)</sup>
+
+---
+
+### Anime Streaming Services
+
+---
+
+#### VRV
 
 ??? question "VRV - [Click to show/hide]"
 
