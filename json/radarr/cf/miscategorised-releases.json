@@ -1,0 +1,46 @@
+{
+  "trash_id": "9b8bf067e1b0bd24108a4c7e59373589",
+  "trash_scores": {
+    "default": 2000
+  },
+  "name": "Remux Sized Encode",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "BLURAY",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 9
+      }
+    },
+    {
+      "name": "Not REMUX",
+      "implementation": "QualityModifierSpecification",
+      "negate": true,
+      "required": true,
+      "fields": {
+        "value": 5
+      }
+    },
+    {
+      "name": "Malus",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(malus)\\b"
+      }
+    },
+    {
+      "name": "Gazprom",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(gazprom)\\b"
+      }
+    }
+  ]
+}
