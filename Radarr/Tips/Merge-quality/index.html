@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -3544,12 +3544,11 @@
 <h3 id="sonarr-current-logic">Sonarr current logic<a class="headerlink" href="#sonarr-current-logic" title="Permanent link"></a></h3>
 <details class="abstract">
 <summary>Sonarr current logic - [Click to show/hide]</summary>
-<p>As of 2021-11-06 the logic is as follows:</p>
+<p>As of 2024-01-16 the logic is as follows:</p>
 <p>The Current logic on how downloads are compared is <strong>Quality Trumps All</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
 <ol>
 <li>Quality</li>
-<li>Language</li>
-<li>Preferred Word Score</li>
+<li>Custom Format Score</li>
 <li>Protocol</li>
 <li>Episode Count</li>
 <li>Episode Number</li>
@@ -3560,8 +3559,10 @@
 </ol>
 <p><a href="https://wiki.servarr.com/sonarr/faq#how-are-possible-downloads-compared" rel="noopener noreferrer" target="_blank">Source: Wiki Servarr</a></p>
 <div class="admonition warning">
-<p>REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality.</p>
-<p><code>Settings</code> =&gt; <code>Media Management</code> =&gt; <code>File Management</code> =&gt; <code>Proper &amp; Repacks</code> Change to <code>Do Not Prefer</code> and use a preferred word regex of <code>/\b(repack|proper)\b/i</code></p>
+<p>* Use Custom Formats and TRaSH Guide's <a href="https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats/#season-pack">season pack custom format</a> with a score greater than zero to prefer season packs.</p>
+</div>
+<div class="admonition warning">
+<p>REPACKS and PROPERs are v2 of Qualities and thus rank above a non-repack of the same quality. <a href="/sonarr/settings#file-management">Set Media Management =&gt; File Management <code>Download Proper &amp; Repacks</code> to "Do Not Prefer"</a> and use <a href="https://trash-guides.info/Sonarr/sonarr-collection-of-custom-formats/#repackproper">TRaSH's Repack/Proper Custom Format</a> with a positive score as suggested by <a href="https://trash-guides.info/Sonarr/sonarr-setup-quality-profiles/">TRaSH's Guides</a></p>
 </div>
 </details>
 <!-- END INCLUDE -->
@@ -3716,10 +3717,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
