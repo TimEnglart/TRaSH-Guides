@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -3861,19 +3861,15 @@
 
 
 <h1 id="qbittorrent-basic-setup">qBittorrent - Basic Setup<a class="headerlink" href="#qbittorrent-basic-setup" title="Permanent link"></a></h1>
-<!-- BEGIN INCLUDE ../../../includes/downloaders/basic-setup.md -->
 <p>This basic example is based on the use of docker images</p>
 <div class="admonition tip">
 <p>Keep in mind the path are setup so it works with hardlinks and instant moves.</p>
 <p>More info <a href="/File-and-Folder-Structure/Hardlinks-and-Instant-Moves/" rel="noopener noreferrer" target="_blank">HERE</a></p>
 </div>
-<!-- BEGIN INCLUDE ../file-and-folder-structure/bad-path-suggestion.md -->
 <h3 id="bad-path-suggestion">Bad path suggestion<a class="headerlink" href="#bad-path-suggestion" title="Permanent link"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
-<!-- END INCLUDE -->
-
 <div class="admonition warning">
 <p>But you're able to change this, by not using the pre-defined/recommended paths like:</p>
 <ul>
@@ -3882,8 +3878,6 @@
 <li><code>/tv</code> =&gt; <code>/data/media/tv</code></li>
 </ul>
 </div>
-<!-- END INCLUDE -->
-
 <hr />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3953,7 +3947,6 @@
 </li>
 </ol>
 <h4 id="attention">ATTENTION<a class="headerlink" href="#attention" title="Permanent link"></a></h4>
-<!-- BEGIN INCLUDE ../../../includes/downloaders/warning-path-location.md -->
 <div class="admonition warning">
 <p class="admonition-title">ATTENTION</p>
 <ol>
@@ -3963,10 +3956,8 @@
 <li>Starr Apps import from your download location (copy/move/hardlink) to your media folder/library</li>
 <li>Plex, Emby, JellyFin, or Kodi should <strong>ONLY</strong> have access to your media folder/library</li>
 </ol>
-<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> <strong><strong>Your Download and Media Library should be **NEVER</strong> the same locations**</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /> <strong><strong>Your Download and Media Library should be **NEVER</strong> the same locations**</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
-<!-- END INCLUDE -->
-
 <hr />
 <h2 id="connection">Connection<a class="headerlink" href="#connection" title="Permanent link"></a></h2>
 <h3 id="listening-port">Listening Port<a class="headerlink" href="#listening-port" title="Permanent link"></a></h3>
@@ -4124,7 +4115,7 @@
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /> <strong>NEVER USE THIS OPTION ON (Semi-)PRIVATE TRACKERS</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/203c.svg" title=":bangbang:" /></p>
+<p><img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /> <strong>NEVER USE THIS OPTION ON (Semi-)PRIVATE TRACKERS</strong> <img alt="‼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/203c.svg" title=":bangbang:" /></p>
 </div>
 <hr />
 <h2 id="web-ui">Web UI<a class="headerlink" href="#web-ui" title="Permanent link"></a></h2>
@@ -4295,7 +4286,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

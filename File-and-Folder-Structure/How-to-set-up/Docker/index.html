@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../../img/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -3642,7 +3642,6 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
 <p>External paths (or <code>Host Path</code>) depend on where you mounted your share or your drives.</p>
 <p>For example <code>/&lt;path_to_data&gt;/data</code>, or even <code>/data</code>.</p>
 </div>
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/folder-structure.md -->
 <h2 id="folder-structure">Folder Structure<a class="headerlink" href="#folder-structure" title="Permanent link"></a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -3654,7 +3653,6 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
 <p>For this example we're going to make use of a share called <code>data</code>.</p>
 <p>The <code>data</code> folder has sub-folders for <code>torrents</code> and <code>usenet</code> and each of these have sub-folders for <code>tv</code>, <code>movie</code>, <code>books</code> and <code>music</code> downloads to keep things neat. The <code>media</code> folder has nicely named <code>TV</code>, <code>Movies</code>, <code>Books</code> and <code>Music</code> sub-folders, this is your library and what you’d pass to Plex, Emby or JellyFin.</p>
 <p><em>In this examples I'm using lower case on all folder on purpose, being Linux is case sensitive.</em></p>
-<!-- BEGIN INCLUDE ./docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
 │   ├── books
@@ -3674,23 +3672,14 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
     ├── music
     └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/bad-path-suggestion.md -->
 <h3 id="bad-path-suggestion">Bad path suggestion<a class="headerlink" href="#bad-path-suggestion" title="Permanent link"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">The default path setup suggested by some docker developers that encourages people to use mounts like <code>/movies</code>, <code>/tv</code>, <code>/books</code> or <code>/downloads</code> is very suboptimal and it makes them look like two or three file systems, even if they aren’t (<em>Because of how Docker’s volumes work</em>). It is the easiest way to get started. While easy to use, it has a major drawback. Mainly losing the ability to hardlink or instant move, resulting in a slower and more I/O intensive copy + delete is used.</p>
 </div>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/breakdown-folder-structure-docker.md -->
 <h3 id="breakdown-of-the-folder-structure">Breakdown of the Folder Structure<a class="headerlink" href="#breakdown-of-the-folder-structure" title="Permanent link"></a></h3>
 <h4 id="torrent-clients">Torrent clients<a class="headerlink" href="#torrent-clients" title="Permanent link"></a></h4>
 <p>qBittorrent, Deluge, ruTorrent</p>
 <p>The reason why we use <code>/data/torrents</code> for the torrent client is because it only needs access to the torrent files. In the torrent software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/torrents/{tv|movies|music}</code>.</p>
-<!-- BEGIN INCLUDE ./docker-tree-torrents.md -->
 <div class="highlight"><pre><span></span><code>data
 └── torrents
     ├── books
@@ -3698,14 +3687,11 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
     ├── music
     └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <p><code>Container Path:</code> =&gt; <code>/data/torrents/</code></p>
 <p><code>Host Path:</code> =&gt; <code>/&lt;path_to_data&gt;/data/torrents/</code></p>
 <h4 id="usenet-clients">Usenet clients<a class="headerlink" href="#usenet-clients" title="Permanent link"></a></h4>
 <p>NZBGet or SABnzbd</p>
 <p>The reason why we use <code>/data/usenet</code> for the Usenet client is because it only needs access to the Usenet files. In the Usenet software settings, you’ll need to reconfigure paths and you can sort into sub-folders like <code>/data/usenet/complete/{tv|movies|music}</code>.</p>
-<!-- BEGIN INCLUDE ./docker-tree-usenet.md -->
 <div class="highlight"><pre><span></span><code>data
 └── usenet
     ├── incomplete
@@ -3715,14 +3701,11 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
         ├── music
         └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <p><code>Container Path:</code> =&gt; <code>/data/usenet/</code></p>
 <p><code>Host Path:</code> =&gt; <code>/&lt;path_to_data&gt;/data/usenet/</code></p>
 <h4 id="the-starr-apps">The Starr Apps<a class="headerlink" href="#the-starr-apps" title="Permanent link"></a></h4>
 <p>Sonarr, Radarr, Readarr and Lidarr</p>
 <p>Sonarr, Radarr, Readarr and Lidarr gets access to everything using <code>/data</code> because the download folder(s) and media folder will look like and be one file system. Hardlinks will work and moves will be atomic, instead of copy + delete.</p>
-<!-- BEGIN INCLUDE ./docker-tree-full.md -->
 <div class="highlight"><pre><span></span><code>data
 ├── torrents
 │   ├── books
@@ -3742,14 +3725,11 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
     ├── music
     └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <p><code>Container Path:</code> =&gt; <code>/data</code></p>
 <p><code>Host Path:</code> =&gt; <code>/&lt;path_to_data&gt;/data/</code></p>
 <h4 id="media-server">Media Server<a class="headerlink" href="#media-server" title="Permanent link"></a></h4>
 <p>Plex, Emby, JellyFin and Bazarr</p>
 <p>Plex, Emby, JellyFin and Bazarr only needs access to your media library using <code>/data/media</code>, which can have any number of sub folders like Movies, Kids Movies, TV, Documentary TV and/or Music as sub folders.</p>
-<!-- BEGIN INCLUDE ./docker-tree-media.md -->
 <div class="highlight"><pre><span></span><code>data
 └── media
     ├── movies
@@ -3757,22 +3737,15 @@ You may choose to rely on DockSTARTer for various changes to your Docker system 
     ├── books
     └── tv
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <p><code>Container Path:</code> =&gt; <code>/data/media</code></p>
 <p><code>Host Path:</code> =&gt; <code>/&lt;path_to_data&gt;/data/media/</code></p>
 <hr />
 <p><strong>Don't forget to look at the <a href="/File-and-Folder-Structure/Examples/">Examples</a> how to set up the paths inside the applications.</strong></p>
-<!-- END INCLUDE -->
-
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/permissions.md -->
 <h3 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link"></a></h3>
 <p>Recursively chown user and group and Recursively chmod to 775/664</p>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span><span class="nv">$USER</span>:<span class="nv">$USER</span><span class="w"> </span>/data
 sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="nv">a</span><span class="o">=</span>,a+rX,u+w,g+w<span class="w"> </span>/data
 </code></pre></div>
-<!-- END INCLUDE -->
-
 <h2 id="docker-compose-example">Docker-compose Example<a class="headerlink" href="#docker-compose-example" title="Permanent link"></a></h2>
 <div class="admonition example">
 <p>This is a docker-compose example based on a default Ubuntu install.</p>
@@ -3850,7 +3823,6 @@ sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </sp
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/data/usenet:/data/usenet:rw</span>
 </code></pre></div>
 </details>
-<!-- BEGIN INCLUDE ../../../includes/file-and-folder-structure/docker-compose-commands.md -->
 <h3 id="docker-compose-commands">Docker-Compose Commands<a class="headerlink" href="#docker-compose-commands" title="Permanent link"></a></h3>
 <details class="tip">
 <summary>docker-compose commands - [Click to show/hide]</summary>
@@ -3861,8 +3833,6 @@ sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </sp
 <li><code>sudo docker system prune -a --volumes --force</code> (Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.)</li>
 </ul>
 </details>
-<!-- END INCLUDE -->
-
 <!-- markdownlint-disable MD041-->
 <hr />
 <div class="admonition question">
@@ -3894,7 +3864,7 @@ sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </sp
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 14, 2024 18:45:56</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">June 27, 2024 22:11:19</span>
   </span>
 
     
@@ -4004,7 +3974,7 @@ sudo<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </sp
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view", "content.tooltips"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
