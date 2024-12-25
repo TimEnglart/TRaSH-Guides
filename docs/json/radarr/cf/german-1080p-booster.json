@@ -1,11 +1,10 @@
 {
-  "trash_id": "f845be10da4f442654c13e1f2c3d6cd5",
+  "trash_id": "3bc8df3a71baaac60a31ef696ea72d36",
   "trash_scores": {
-    "default": -10000,
-    "german": 10001
+      "default": 250
   },
-  "name": "German DL",
-  "includeCustomFormatWhenRenaming": true,
+  "name": "German 1080p Booster",
+  "includeCustomFormatWhenRenaming": false,
   "specifications": [
     {
       "name": "German",
@@ -23,6 +22,15 @@
       "required": true,
       "fields": {
         "value": -2
+      }
+    },
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1080
       }
     }
   ]
