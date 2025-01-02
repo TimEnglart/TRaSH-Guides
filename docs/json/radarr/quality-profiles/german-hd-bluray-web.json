@@ -1,11 +1,12 @@
 {
-  "trash_id": "9ca12ea80aa55ef916e3751f4b874151",
-  "name": "Remux + WEB 1080p",
+  "trash_id": "2b90e905c99490edc7c7a5787443748b",
+  "name": "[German] HD Bluray + WEB",
+  "trash_score_set": "german",
   "upgradeAllowed": true,
-  "cutoff": "Remux-1080p",
+  "cutoff": "Merged QPs",
   "minFormatScore": 0,
-  "cutoffFormatScore": 10000,
-  "language":"Original",
+  "cutoffFormatScore": 25000,
+  "language":"Any",
   "items": [
     { "name": "Unknown", "allowed": false },
     { "name": "WORKPRINT", "allowed": false },
@@ -25,14 +26,8 @@
     { "name": "Bluray-480p", "allowed": false },
     { "name": "Bluray-576p", "allowed": false },
     { "name": "HDTV-720p", "allowed": false },
-    {
-      "name": "WEB 720p",
-      "allowed": false,
-      "items": ["WEBDL-720p", "WEBRip-720p"]
-    },
-    { "name": "Bluray-720p", "allowed": false },
     { "name": "HDTV-1080p", "allowed": false },
-    { "name": "Bluray-1080p", "allowed": false },
+    { "name": "Remux-1080p", "allowed": false },
     { "name": "HDTV-2160p", "allowed": false },
     {
       "name": "WEB 2160p",
@@ -44,16 +39,38 @@
     { "name": "BR-DISK", "allowed": false },
     { "name": "Raw-HD", "allowed": false },
     {
-      "name": "WEB 1080p",
+      "name": "Merged QPs",
       "allowed": true,
-      "items": ["WEBDL-1080p", "WEBRip-1080p"]
-    },
-    { "name": "Remux-1080p", "allowed": true }
+      "items": [
+        "WEBRip-720p",
+        "WEBDL-720p",
+        "Bluray-720p",
+        "WEBDL-1080p",
+        "WEBRip-1080p",
+        "Bluray-1080p"
+      ]
+    }
   ],
   "formatItems": {
-    "Remux Tier 01": "3a3ff47579026e76d6504ebea39390de",
-    "Remux Tier 02": "9f98181fe5a3fbeb0cc29340da2a468a",
-    "Remux Tier 03": "8baaf0b3142bf4d94c42a724f034e27a",
+    "German 1080p Booster": "3bc8df3a71baaac60a31ef696ea72d36",
+    "1080p": "820b09bb9acbfde9c35c71e0e565dad8",
+    "720p": "b2be17d608fc88818940cd1833b0b24c",
+    "German": "86bc3115eb4e9873ac96904a4a68e19e",
+    "German DL": "f845be10da4f442654c13e1f2c3d6cd5",
+    "German DL (undefined)": "6aad77771dabe9d3e9d7be86f310b867",
+    "German Bluray Tier 01": "54795711b78ea87e56127928c423689b",
+    "German Bluray Tier 02": "1bfc773c53283d47c68e535811da30b7",
+    "German Bluray Tier 03": "aee01d40cd1bf4bcded81ee62f0f3659",
+    "German Web Tier 01": "a2ab25194f463f057a5559c03c84a3df",
+    "German Web Tier 02": "08d120d5a003ec4954b5b255c0691d79",
+    "German Web Tier 03": "439f9d71becaed589058ec949e037ff3",
+    "German Scene": "2d136d4e33082fe573d06b1f237c40dd",
+    "German LQ": "263943bc5d99550c68aad0c4278ba1c7",
+    "German Microsized": "03c430f326f10a27a9739b8bc83c30e4",
+    "Line/Mic Dubbed": "c465ccc73923871b3eb1802042331306",
+    "HD Bluray Tier 01": "ed27ebfef2f323e964fb1f61391bcb35",
+    "HD Bluray Tier 02": "c20c8647f2746a1f4c4262b0fbbeeeae",
+    "HD Bluray Tier 03": "5608c71bcebba0a5e666223bae8c9227",
     "WEB Tier 01": "c20f169ef63c5f40c2def54abaf4438e",
     "WEB Tier 02": "403816d65392c79236dcb6dd591aeda4",
     "WEB Tier 03": "af94e0fe497124d1f9ce732069ec8c3b",
