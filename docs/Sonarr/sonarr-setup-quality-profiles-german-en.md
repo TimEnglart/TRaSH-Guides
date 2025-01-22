@@ -66,7 +66,7 @@ There are a couple of changes that are needed for German Custom Formats to work 
     Please have a look here: [Recommended naming scheme](/Sonarr/Sonarr-recommended-naming-scheme/){:target="_blank" rel="noopener noreferrer"}.
 
 ??? abstract "Set the Maximum Custom Format Score - [Click to show/hide]"
-    To allow upgradeability to the best possible quality, we set the `Upgrade Until Custom Format Score` to `25k`, which is more than the highest reachable score.
+    To allow upgradeability to the best possible quality, we set the `Upgrade Until Custom Format Score` to `35k`, which is more than the highest reachable score.
 
     !!! tip "Tip"
         If you want to stop upgrades at a specific score, feel free to adapt this setting based on your needs.
@@ -153,7 +153,7 @@ If you prefer High-Quality HD Encodes (720p/1080p)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
 ---
 
@@ -181,7 +181,7 @@ If you prefer 1080p Remuxes (Bluray-1080p Remux)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
 ---
 
@@ -224,9 +224,9 @@ If you prefer High-Quality UHD Encodes (2160p)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-uhd-optional.md" !}
 
 ---
 
@@ -260,9 +260,9 @@ If you prefer 2160p Remuxes (Bluray-2160p Remux)
 
 **The following Custom Formats are optional:**
 
-{! include-markdown "../../includes/cf/sonarr-misc-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-optional.md" !}
 
-{! include-markdown "../../includes/cf/sonarr-misc-uhd-optional.md" !}
+{! include-markdown "../../includes/german-guide/sonarr-german-misc-uhd-optional.md" !}
 
 ---
 
