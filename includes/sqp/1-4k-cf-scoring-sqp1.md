@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD041-->
 #### Custom Formats and scores
 
 **The following Custom Formats are required:**
@@ -125,7 +126,7 @@
 
 {! include-markdown "../../includes/cf/radarr-misc-uhd-optional.md" !}
 
-??? abstract "Movie Versions - [Click to show/hide]"
+??? abstract "Movie Versions (Optional) - [Click to show/hide]"
 
     | Custom Format                                                                                                           |                                 Score                                 | Trash ID                                               |
     | ----------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------: | ------------------------------------------------------ |
@@ -142,3 +143,4 @@
         - The reason why we don't add [{{ radarr['cf']['imax']['name'] }}](/Radarr/Radarr-collection-of-custom-formats/#imax) is because BHDStudio didn't add IMAX to their filename before 2023-07-27.
 
         !!! danger "Adding `IMAX`/`IMAX Enhanced` will replace the BHDStudio release in most cases :warning:"
+<!-- markdownlint-enable MD041-->

@@ -62,12 +62,30 @@
       }
     },
     {
+      "name": "Feranki1980",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(Feranki1980)$"
+      }
+    },
+    {
       "name": "FGT",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
       "required": false,
       "fields": {
         "value": "^(FGT)$"
+      }
+    },
+    {
+      "name": "FMD",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(FMD)$"
       }
     },
     {

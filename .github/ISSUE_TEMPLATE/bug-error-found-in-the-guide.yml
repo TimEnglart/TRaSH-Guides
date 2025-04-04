@@ -1,8 +1,16 @@
 name: Bug/Error Found in the Guide?
-description: Do not open an issue on GitHub for support questions. Any support questions will be closed. If you are unsure, please check out the discord server first.
+description: Issues are only opened on GitHub by one of the team members after we have confirmed them on our Discord server. Issues raised directly on GitHub will be automatically closed.
 title: "[Bug]"
 labels: ["Type: Bug", "Status: Triage Needed"]
 body:
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Discord
+      description: By submitting this issue, you agree that you have visited the Discord server and that a team member confirmed this issue.
+      options:
+        - label: I visited the Discord server, and one of the team members confirmed this issue.
+          required: true
   - type: markdown
     attributes:
       value: "## Which Guide"
