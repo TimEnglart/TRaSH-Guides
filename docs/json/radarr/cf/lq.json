@@ -35,6 +35,15 @@
       }
     },
     {
+      "name": "AOC",
+      "implementation": "ReleaseGroupSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "^(AOC)$"
+      }
+    },
+    {
       "name": "AROMA",
       "implementation": "ReleaseGroupSpecification",
       "negate": false,
@@ -608,15 +617,6 @@
       "required": false,
       "fields": {
         "value": "^(PATOMiEL)$"
-      }
-    },
-    {
-      "name": "PiRaTeS",
-      "implementation": "ReleaseGroupSpecification",
-      "negate": false,
-      "required": false,
-      "fields": {
-        "value": "^(PiRaTeS)$"
       }
     },
     {
