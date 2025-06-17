@@ -78,6 +78,15 @@
       "fields": {
         "value": "\\b(UnKn0wn)\\b"
       }
+    },
+    {
+      "name": "E",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "(\\-E)$"
+      }
     }
   ]
 }
