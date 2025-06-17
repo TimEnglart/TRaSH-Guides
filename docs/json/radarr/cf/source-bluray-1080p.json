@@ -1,0 +1,28 @@
+{
+  "trash_id": "b8b92ddee060c1224fddcdb4117ab76b",
+  "trash_scores": {
+    "default": 500
+  },
+  "name": "Source Bluray 1080p",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "1080p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 1080
+      }
+    },
+    {
+      "name": "Bluray",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 9
+      }
+    }
+  ]
+}

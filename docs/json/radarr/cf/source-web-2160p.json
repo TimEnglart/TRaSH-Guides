@@ -1,0 +1,37 @@
+{
+  "trash_id": "fc6589768d24f9daea3c8697feac8246",
+  "trash_scores": {
+    "default": 500
+  },
+  "name": "Source Web 2160p",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "2160p",
+      "implementation": "ResolutionSpecification",
+      "negate": false,
+      "required": true,
+      "fields": {
+        "value": 2160
+      }
+    },
+    {
+      "name": "WEBDL",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 7
+      }
+    },
+    {
+      "name": "WEBRIP",
+      "implementation": "SourceSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": 8
+      }
+    }
+  ]
+}
