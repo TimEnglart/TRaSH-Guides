@@ -1,0 +1,83 @@
+{
+  "trash_id": "48d11453fc26e51b83e25ea2950d4330",
+  "trash_scores": {
+    "default": -90000
+  },
+  "trash_regex": "https://regex101.com/r/MDx42o/latest",
+  "name": "Blacklisted Release Group",
+  "includeCustomFormatWhenRenaming": false,
+  "specifications": [
+    {
+      "name": "Chimaera",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Chimaera)\\b"
+      }
+    },
+    {
+      "name": "Joy",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Joy)\\b"
+      }
+    },
+    {
+      "name": "AMIABLE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(AMIABLE)\\b"
+      }
+    },
+    {
+      "name": "B0MBADiERS",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(B0MBADiERS)\\b"
+      }
+    },
+    {
+      "name": "Grym",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(Grym)\\b"
+      }
+    },
+    {
+      "name": "LUBRiCATE",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(LUBRiCATE)\\b"
+      }
+    },
+    {
+      "name": "SasukeducK",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(SasukeducK)\\b"
+      }
+    },
+    {
+      "name": "UnKn0wn",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(UnKn0wn)\\b"
+      }
+    }
+  ]
+}
