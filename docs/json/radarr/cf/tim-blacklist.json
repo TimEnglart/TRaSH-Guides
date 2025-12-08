@@ -87,6 +87,15 @@
       "fields": {
         "value": "(\\-E)$"
       }
+    },
+    {
+      "name": "ZAX",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(ZAX|Z@X)\\b"
+      }
     }
   ]
 }
