@@ -96,6 +96,15 @@
       "fields": {
         "value": "\\b(ZAX|Z@X)\\b"
       }
+    },
+    {
+      "name": "BROADCAST",
+      "implementation": "ReleaseTitleSpecification",
+      "negate": false,
+      "required": false,
+      "fields": {
+        "value": "\\b(BROADCAST)\\b"
+      }
     }
   ]
 }
